@@ -1,11 +1,11 @@
 var size = 0;
 var placement = 'point';
-function categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, value, size, resolution, labelText,
+function categories_Brojzdravstvenihustanovadostupanu25minutehoda_7(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     switch(valueStr) {
-        case '2':
+        case '1':
             return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(239,243,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -14,7 +14,7 @@ function categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, valu
     })];
 			break;
 
-        case '3':
+        case '2':
             return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(189,215,231,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -23,7 +23,7 @@ function categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, valu
     })];
 			break;
 
-        case '4':
+        case '3':
             return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(107,174,214,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -32,7 +32,7 @@ function categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, valu
     })];
 			break;
 
-        case '5':
+        case '4':
             return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(33,113,181,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -42,7 +42,7 @@ function categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, valu
 			break;
     }};
 
-var style_Brojzdravstvenihustanovidostupanu6minutahoda_6 = function(feature, resolution){
+var style_Brojzdravstvenihustanovadostupanu25minutehoda_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -64,7 +64,7 @@ var style_Brojzdravstvenihustanovidostupanu6minutahoda_6 = function(feature, res
         labelText = String("");
     }
     
-    var style = categories_Brojzdravstvenihustanovidostupanu6minutahoda_6(feature, value, size, resolution, labelText,
+    var style = categories_Brojzdravstvenihustanovadostupanu25minutehoda_7(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

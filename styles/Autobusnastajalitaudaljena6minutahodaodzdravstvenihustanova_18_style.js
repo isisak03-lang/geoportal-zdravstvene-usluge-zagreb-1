@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Autobusnastajalitaudaljenado6minutahodaodzdravstvenihustanovai_18 = function(feature, resolution){
+var style_Autobusnastajalitaudaljena6minutahodaodzdravstvenihustanova_18 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

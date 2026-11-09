@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([1758706.939516, 5737630.961978, 1803647.067954, 5765637.569832], map.getSize());
+map.getView().fit([1767595.063242, 5742620.206648, 1792030.475819, 5756636.537391], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {
@@ -518,7 +518,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (503 > 240) {
+        if (515 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -532,13 +532,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<img src="logo.png" alt="Logo fakulteta" style="width:200px; height:auto; display:block; margin:0 auto 10px;">' + 'Izradili: Antonela Banović, Lucija Mahovne, Lovro Šanje, Ivan Šišak (Geografski odsjek, Sveučilište u Zagrebu Prirodoslovno-matematički fakultet)<br /><br />Podaci o ustanovama i stajalištima: Grad Zagreb, data.gov.hr (Otvorena dozvola; Domovi zdravlja: CC BY 4.0). Prometna mreža: © OpenStreetMap suradnici (ODbL), izvadak Geofabrik. Podloga: Ortofoto 2022, Grad Zagreb (Otvorena dozvola). Granice mjesnih odbora: Grad Zagreb, data.gov.hr (Otvorena dozvola). Populacijska mreža 2021.: Eurostat, GISCO (CC BY 4.0)';
+                linkElement.innerHTML = '<img src="logo.png" alt="Logo fakulteta" style="width:200px; height:auto; display:block; margin:0 auto 10px;">' + 'Verzija 1.0<br />Izradili: Antonela Banović, Lucija Mahovne, Lovro Šanje, Ivan Šišak (Geografski odsjek, Sveučilište u Zagrebu Prirodoslovno-matematički fakultet)<br /><br />Podaci o ustanovama i stajalištima: Grad Zagreb, data.gov.hr (Otvorena dozvola; Domovi zdravlja: CC BY 4.0). Prometna mreža: © OpenStreetMap suradnici (ODbL), izvadak Geofabrik. Podloga: Ortofoto 2022, Grad Zagreb (Otvorena dozvola). Granice mjesnih odbora: Grad Zagreb, data.gov.hr (Otvorena dozvola). Populacijska mreža 2021.: Eurostat, GISCO (CC BY 4.0)';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<img src="logo.png" alt="Logo fakulteta" style="width:200px; height:auto; display:block; margin:0 auto 10px;">' + 'Izradili: Antonela Banović, Lucija Mahovne, Lovro Šanje, Ivan Šišak (Geografski odsjek, Sveučilište u Zagrebu Prirodoslovno-matematički fakultet)<br /><br />Podaci o ustanovama i stajalištima: Grad Zagreb, data.gov.hr (Otvorena dozvola; Domovi zdravlja: CC BY 4.0). Prometna mreža: © OpenStreetMap suradnici (ODbL), izvadak Geofabrik. Podloga: Ortofoto 2022, Grad Zagreb (Otvorena dozvola). Granice mjesnih odbora: Grad Zagreb, data.gov.hr (Otvorena dozvola). Populacijska mreža 2021.: Eurostat, GISCO (CC BY 4.0)';
+            linkElement.innerHTML = 'Verzija 1.0<br />Izradili: Antonela Banović, Lucija Mahovne, Lovro Šanje, Ivan Šišak (Geografski odsjek, Sveučilište u Zagrebu Prirodoslovno-matematički fakultet)<br /><br />Podaci o ustanovama i stajalištima: Grad Zagreb, data.gov.hr (Otvorena dozvola; Domovi zdravlja: CC BY 4.0). Prometna mreža: © OpenStreetMap suradnici (ODbL), izvadak Geofabrik. Podloga: Ortofoto 2022, Grad Zagreb (Otvorena dozvola). Granice mjesnih odbora: Grad Zagreb, data.gov.hr (Otvorena dozvola). Populacijska mreža 2021.: Eurostat, GISCO (CC BY 4.0)';
         }
 
         titleElement.appendChild(linkElement);
